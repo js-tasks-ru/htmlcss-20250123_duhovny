@@ -1,44 +1,60 @@
-.main {padding: 20px 20px 20px 20px;
-    display: block;
-}
-
-/* Стилизация кнопки */
-.main__button-primary, .main__button-alternate {
-    cursor: pointer;
-    height: 48px;
-    border-radius: 8px;
-    border-style: solid;
+.button {
     font-size: 16px;
     font-weight: 500;
     line-height: 18.75px;
     text-align: center;
-    width: 189px;
-    opacity: 0px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 10px 10px 10px;
 }
 
-.main__button-primary {
+.button_primary {
+    cursor: pointer;
+    height: 48px;
+    border-radius: 8px;
+    border-style: solid;
     background-color: var(--blue-2);
     color: var(--white);
 }
 
-.main__button-alternate {
+.button_secondary {
+    cursor: pointer;
+    height: 48px;
+    border-radius: 8px;
+    border-style: solid;
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.button_alternate {
+    cursor: pointer;
+    height: 48px;
+    border-radius: 8px;
+    border-style: solid;
     background-color: var(--white);
     color: var(--grey-4);
     border: 1px solid var(--grey-3);
 }
 
-.main__button-primary:disabled {
+.button_primary:disabled {
+    height: 48px;
+    border-radius: 8px;
+    border-style: solid;
     cursor: not-allowed;
     opacity: 50%;
-    position: fixed;
-    top: 15%;
-    left: 1.3%;
 }
 
-.main__button-alternate:disabled {
+.button_secondary:disabled {
+    height: 48px;
+    border-radius: 8px;
+    border-style: solid;
     cursor: not-allowed;
     opacity: 50%;
-    position: fixed;
-    top: 15%;
-    left: 13.85%;
+}
+
+.button_alternate:disabled {
+    height: 48px;
+    border-radius: 8px;
+    border-style: solid;
+    cursor: not-allowed;
+    opacity: 50%;
 }
