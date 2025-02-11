@@ -4,57 +4,42 @@
     line-height: 18.75px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    padding: 10px 10px 10px 10px;
-}
-
-.button_primary {
+    padding: 15px 15px 14px;
     cursor: pointer;
     height: 48px;
     border-radius: 8px;
     border-style: solid;
+}
+
+.button_primary {
     background-color: var(--blue-2);
     color: var(--white);
 }
 
 .button_secondary {
-    cursor: pointer;
-    height: 48px;
-    border-radius: 8px;
-    border-style: solid;
     background-color: var(--purple);
     color: var(--white);
 }
 
 .button_alternate {
-    cursor: pointer;
-    height: 48px;
-    border-radius: 8px;
-    border-style: solid;
     background-color: var(--white);
     color: var(--grey-4);
     border: 1px solid var(--grey-3);
 }
 
-.button_primary:disabled {
-    height: 48px;
-    border-radius: 8px;
-    border-style: solid;
-    cursor: not-allowed;
-    opacity: 50%;
+.button_primary:hover {
+    background-color: var(--blue-3);
 }
 
-.button_secondary:disabled {
-    height: 48px;
-    border-radius: 8px;
-    border-style: solid;
-    cursor: not-allowed;
-    opacity: 50%;
+.button_secondary:hover {
+    background-color: var(--purple-2);
 }
 
-.button_alternate:disabled {
-    height: 48px;
-    border-radius: 8px;
-    border-style: solid;
-    cursor: not-allowed;
-    opacity: 50%;
+.button_alternate:hover {
+    border-color: var(--black);
+}
+
+.button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
 }
