@@ -1,0 +1,40 @@
+.tooltip {
+    display: inline-block;
+    position: relative;
+    margin-left: 250px;
+    margin-top: 250px;
+}
+
+.tooltip__hint {
+    display: none;
+    position: absolute;
+    width: 129px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: var(--blue-4);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    bottom: 124%;
+    left: -216%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--grey-2);
+    padding: 10px;
+}
+
+.tooltip__hint::before{
+    content: "";
+    border: 7px solid transparent;
+    border-top: 7px solid var(--blue-4);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip__trigger:hover ~ .tooltip__hint {
+    display: block;
+}
