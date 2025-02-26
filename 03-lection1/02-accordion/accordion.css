@@ -4,8 +4,7 @@
     border: 1px solid var(--grey-3);
     background: var(--white);
     padding: 24px 32px;
-    margin-top: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .accordion__details:last-child {
